@@ -1,7 +1,7 @@
 {
     "name": "sanitize-worker",
     "description": "Gearman worker for sanitizing HTML",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author" : "Andris Reinman",
     "maintainers":[
         {
@@ -25,7 +25,7 @@
         }
     ],
     "dependencies": {
-        "sanitizer": "https://github.com/andris9/sanitizer/tarball/v0.1.1",
+        "sanitizer": "https://github.com/andris9/sanitizer/tarball/master",
         "node-gearman": "*"
     },
     "devDependencies": {
