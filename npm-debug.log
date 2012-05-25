@@ -1,0 +1,105 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+info using npm@1.1.21
+info using node@v0.6.18
+verbose config file /home/andris/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose publish [ '.' ]
+verbose caching /home/andris/sanitize-worker/package.json
+verbose loadDefaults sanitize-worker@0.1.0
+info prepublish sanitize-worker@0.1.0
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', path: '.', href: '.' }
+verbose caching package.json
+verbose loadDefaults sanitize-worker@0.1.0
+verbose tar.pack [ '/tmp/npm-1337949045739/1337949045739-0.6894518581684679/tmp.tgz',
+verbose tar.pack   '.' ]
+verbose tarball /tmp/npm-1337949045739/1337949045739-0.6894518581684679/tmp.tgz
+verbose folder .
+verbose unpack /tmp/npm-1337949045739/1337949045739-0.6894518581684679/tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry LICENSE
+silly extracting entry lib/worker.js
+verbose caching /tmp/npm-1337949045739/1337949045739-0.6894518581684679/package/package.json
+verbose loadDefaults sanitize-worker@0.1.0
+verbose from cache /tmp/npm-1337949045739/1337949045739-0.6894518581684679/package/package.json
+verbose tar.pack [ '/home/andris/.npm/sanitize-worker/0.1.0/package.tgz',
+verbose tar.pack   '/tmp/npm-1337949045739/1337949045739-0.6894518581684679/package' ]
+verbose tarball /home/andris/.npm/sanitize-worker/0.1.0/package.tgz
+verbose folder /tmp/npm-1337949045739/1337949045739-0.6894518581684679/package
+verbose unpack /home/andris/.npm/sanitize-worker/0.1.0/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry LICENSE
+silly extracting entry lib/worker.js
+verbose caching /home/andris/.npm/sanitize-worker/0.1.0/package/package.json
+verbose loadDefaults sanitize-worker@0.1.0
+silly updated sha bytes 1524
+info shasum a7df2814a4682426c974c1095cce345756f0ee5d
+info shasum /home/andris/.npm/sanitize-worker/0.1.0/package.tgz
+verbose from cache /home/andris/.npm/sanitize-worker/0.1.0/package/package.json
+verbose chmod /home/andris/.npm/sanitize-worker/0.1.0/package.tgz 644
+verbose chown [ '/home/andris/.npm/sanitize-worker/0.1.0/package.tgz',
+verbose chown   501,
+verbose chown   501 ]
+silly publish { name: 'sanitize-worker',
+silly publish   private: true,
+silly publish   description: 'Gearman worker for sanitizing HTML',
+silly publish   version: '0.1.0',
+silly publish   author: { name: 'Andris Reinman' },
+silly publish   maintainers: [ { name: 'andris', email: 'andris@node.ee' } ],
+silly publish   homepage: 'http://github.com/andris9/sanitize-worker',
+silly publish   repository: 
+silly publish    { type: 'git',
+silly publish      url: 'git://github.com/andris9/sanitize-worker.git' },
+silly publish   scripts: { test: 'nodeunit test/', start: 'node lib/worker.js' },
+silly publish   main: './index',
+silly publish   licenses: 
+silly publish    [ { type: 'MIT',
+silly publish        url: 'http://github.com/andris9/sanitizer/blob/master/LICENSE' } ],
+silly publish   dependencies: 
+silly publish    { sanitizer: 'https://github.com/andris9/sanitizer/tarball/v0.1.1',
+silly publish      'node-gearman': '*' },
+silly publish   devDependencies: { nodeunit: '*' },
+silly publish   engine: { node: '>=0.6' },
+silly publish   keywords: [ 'html' ],
+silly publish   _id: 'sanitize-worker@0.1.0',
+silly publish   optionalDependencies: {},
+silly publish   engines: { node: '*' },
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.1.21',
+silly publish   _nodeVersion: 'v0.6.18',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: { shasum: 'a7df2814a4682426c974c1095cce345756f0ee5d' } }
+ERR! Error: This package has been marked as private
+ERR! Remove the 'private' field from the package.json to publish it.
+ERR!     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:74:31)
+ERR!     at Array.1 (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+ERR!     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:13)
+ERR!     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+ERR!     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:4)
+ERR!     at /usr/local/lib/node_modules/npm/lib/publish.js:53:5
+ERR!     at cb (/usr/local/lib/node_modules/npm/lib/cache.js:574:12)
+ERR!     at /usr/local/lib/node_modules/npm/lib/cache.js:721:13
+ERR!     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:48:11)
+ERR!     at Object.oncomplete (/usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:230:7)
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Linux 2.6.18-028stab093.2
+ERR! command "node" "/usr/local/bin/npm" "publish"
+ERR! cwd /home/andris/sanitize-worker
+ERR! node -v v0.6.18
+ERR! npm -v 1.1.21
+ERR! message This package has been marked as private
+ERR! message Remove the 'private' field from the package.json to publish it.
+verbose exit [ 1, true ]
